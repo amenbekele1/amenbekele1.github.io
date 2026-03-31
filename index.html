@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amen Bekele </title>
+<title>Amen Bekele — Senior Infrastructure & Operations Engineer</title>
 
 <!-- SEO -->
 <meta name="description" content="Senior IT Infrastructure & Operations Engineer specializing in enterprise datacenter ops, VMware, Azure, Active Directory, and complex infrastructure separation projects. Based in Warsaw, Poland.">
@@ -15,7 +15,7 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2300e5a0'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='16' font-weight='700' fill='%230a0c0f' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='22' fill='%2300e5a0'/%3E%3Ctext x='90' y='130' font-family='monospace' font-size='90' font-weight='700' fill='%230a0c0f' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E">
 
-<!-- Open Graph (link previews on LinkedIn, Slack, etc.) -->
+<!-- Open Graph -->
 <meta property="og:title" content="Amen Bekele — Senior Infrastructure & Operations Engineer">
 <meta property="og:description" content="Enterprise datacenter ops, VMware, Azure, AD, and complex infra separation projects. Based in Warsaw, Poland.">
 <meta property="og:type" content="website">
@@ -28,6 +28,10 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Credly embed script -->
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
 <style>
   :root[data-theme="dark"] {
     --bg: #0a0c0f;
@@ -461,7 +465,6 @@
     background: var(--accent2);
   }
   .edu-card:hover { border-color: var(--accent2); }
-
   .edu-degree {
     font-family: 'Syne', sans-serif;
     font-size: 1rem;
@@ -469,17 +472,8 @@
     color: var(--heading);
     margin-bottom: 0.3rem;
   }
-  .edu-school {
-    font-size: 0.8rem;
-    color: var(--accent2);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  .edu-detail {
-    font-size: 0.75rem;
-    color: var(--text2);
-    line-height: 1.7;
-  }
+  .edu-school { font-size: 0.8rem; color: var(--accent2); font-weight: 600; margin-bottom: 0.5rem; }
+  .edu-detail { font-size: 0.75rem; color: var(--text2); line-height: 1.7; }
   .edu-badge {
     display: inline-flex;
     align-items: center;
@@ -515,20 +509,9 @@
   .lang-list { display: flex; flex-direction: column; gap: 0.75rem; }
   .lang-item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
   .lang-name { font-size: 0.8rem; color: var(--heading); font-weight: 600; min-width: 90px; }
-  .lang-bar-wrap {
-    flex: 1;
-    height: 4px;
-    background: var(--bg3);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-  .lang-bar {
-    height: 100%;
-    border-radius: 2px;
-    background: var(--accent);
-    transition: width 1s ease;
-  }
-  .lang-level { font-size: 0.65rem; color: var(--text2); letter-spacing: 0.08em; min-width: 32px; text-align: right; }
+  .lang-bar-wrap { flex: 1; height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden; }
+  .lang-bar { height: 100%; border-radius: 2px; background: var(--accent); transition: width 1s ease; }
+  .lang-level { font-size: 0.65rem; color: var(--text2); letter-spacing: 0.08em; min-width: 40px; text-align: right; }
 
   /* ─── EXPERIENCE (TIMELINE) ─── */
   .timeline { position: relative; }
@@ -539,11 +522,7 @@
     width: 1px;
     background: var(--border);
   }
-  .tl-item {
-    padding-left: 2rem;
-    padding-bottom: 3rem;
-    position: relative;
-  }
+  .tl-item { padding-left: 2rem; padding-bottom: 3rem; position: relative; }
   .tl-item:last-child { padding-bottom: 0; }
   .tl-dot {
     position: absolute;
@@ -555,35 +534,12 @@
     transition: background 0.2s;
   }
   .tl-item:hover .tl-dot { background: var(--accent); }
-  .tl-date {
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 0.3rem;
-  }
-  .tl-role {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--heading);
-    margin-bottom: 0.15rem;
-  }
-  .tl-company {
-    font-size: 0.78rem;
-    color: var(--text2);
-    margin-bottom: 0.8rem;
-  }
+  .tl-date { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; margin-bottom: 0.3rem; }
+  .tl-role { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--heading); margin-bottom: 0.15rem; }
+  .tl-company { font-size: 0.78rem; color: var(--text2); margin-bottom: 0.8rem; }
   .tl-company span { color: var(--accent2); }
   .tl-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
-  .tl-bullets li {
-    font-size: 0.8rem;
-    color: var(--text2);
-    padding-left: 1rem;
-    position: relative;
-    line-height: 1.6;
-  }
+  .tl-bullets li { font-size: 0.8rem; color: var(--text2); padding-left: 1rem; position: relative; line-height: 1.6; }
   .tl-bullets li::before { content: '›'; position: absolute; left: 0; color: var(--accent); }
 
   /* ─── PROJECTS ─── */
@@ -615,34 +571,21 @@
     font-size: 1rem;
     flex-shrink: 0;
   }
-  .proj-status {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.5rem;
-    border-radius: 2px;
-  }
+  .proj-status { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 2px; }
   .status-active { background: rgba(0,229,160,0.1); color: var(--accent); border: 1px solid rgba(0,229,160,0.2); }
   .status-complete { background: var(--accent2-dim); color: var(--accent2); border: 1px solid rgba(0,120,255,0.2); }
   .status-ongoing { background: rgba(255,107,53,0.1); color: var(--accent3); border: 1px solid rgba(255,107,53,0.2); }
   .proj-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--heading); }
   .proj-desc { font-size: 0.78rem; color: var(--text2); line-height: 1.7; }
   .proj-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: auto; }
-  .proj-tag {
-    font-size: 0.65rem;
-    padding: 0.15rem 0.5rem;
-    border-radius: 2px;
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    color: var(--text3);
-  }
+  .proj-tag { font-size: 0.65rem; padding: 0.15rem 0.5rem; border-radius: 2px; background: var(--bg3); border: 1px solid var(--border); color: var(--text3); }
 
   /* ─── CERTS ─── */
   .certs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1rem;
+    align-items: start;
   }
   .cert-card {
     background: var(--card);
@@ -659,6 +602,24 @@
   .cert-name { font-size: 0.82rem; font-weight: 600; color: var(--heading); line-height: 1.4; }
   .cert-issuer { font-size: 0.7rem; color: var(--text2); }
   .cert-year { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; color: var(--accent2); text-transform: uppercase; margin-top: auto; }
+
+  /* Credly embed wrapper — keep it tidy inside the card */
+  .credly-card {
+    background: var(--card);
+    border: 1px solid rgba(0,120,255,0.3);
+    border-radius: 4px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: border-color 0.2s;
+    overflow: hidden;
+  }
+  .credly-card:hover { border-color: var(--accent2); }
+  .credly-card .cert-name { color: var(--accent2); text-align: center; }
+  .credly-card .cert-issuer { text-align: center; }
+  .credly-card .cert-year { text-align: center; }
 
   /* ─── CONTACT ─── */
   .contact-grid {
@@ -708,7 +669,6 @@
   }
   .form-input:focus, .form-textarea:focus { border-color: var(--accent); background: var(--bg3); }
   .form-textarea { min-height: 120px; resize: vertical; }
-
   .form-submit {
     background: var(--accent);
     color: #0a0c0f;
@@ -728,13 +688,7 @@
   .form-submit:disabled { opacity: 0.7; cursor: not-allowed; }
   .form-submit.sent { background: var(--accent2); border-color: var(--accent2); color: #fff; }
   .form-submit.error { background: var(--accent3); border-color: var(--accent3); color: #fff; }
-
-  .form-status {
-    font-size: 0.74rem;
-    padding: 0.5rem 0.8rem;
-    border-radius: 3px;
-    display: none;
-  }
+  .form-status { font-size: 0.74rem; padding: 0.5rem 0.8rem; border-radius: 3px; display: none; }
   .form-status.show { display: block; }
   .form-status.success { background: rgba(0,229,160,0.1); border: 1px solid rgba(0,229,160,0.25); color: var(--accent); }
   .form-status.fail { background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.25); color: var(--accent3); }
@@ -755,7 +709,6 @@
   }
   footer span { color: var(--accent); }
 
-  /* ─── FADE-IN ─── */
   .fade-in { opacity: 1; transform: none; }
 </style>
 </head>
@@ -821,7 +774,6 @@
 <section id="skills">
   <div class="section-label fade-in">expertise</div>
   <h2 class="section-title fade-in">Skills & Technologies</h2>
-
   <div class="skills-grid">
     <div class="skill-card fade-in">
       <div class="skill-cat">Virtualization & Compute</div>
@@ -919,7 +871,6 @@
 <section id="education">
   <div class="section-label fade-in">background</div>
   <h2 class="section-title fade-in">Education & Languages</h2>
-
   <div class="edu-lang-grid">
     <div class="edu-card fade-in">
       <div class="edu-degree">B.Eng. Computer Engineering</div>
@@ -930,7 +881,6 @@
       </div>
       <div class="edu-badge">🏅 Graduated with Distinction</div>
     </div>
-
     <div class="lang-card fade-in">
       <div class="lang-title">Languages</div>
       <div class="lang-list">
@@ -960,16 +910,20 @@
 <section id="experience">
   <div class="section-label fade-in">career</div>
   <h2 class="section-title fade-in">Work Experience</h2>
-
   <div class="timeline">
 
     <div class="tl-item fade-in">
       <div class="tl-dot"></div>
       <div class="tl-date">Jan 2026 — Present</div>
-      <div class="tl-role">Infrastructure & Operations DevOps Engineer</div>
+      <div class="tl-role">Infrastructure & Operations Engineer</div>
       <div class="tl-company"><span>GN Group (GN Audio)</span> · Warsaw, Poland</div>
       <ul class="tl-bullets">
         <li>Core Infrastructure & Operations team — enterprise-scale Windows / Azure / VMware environment</li>
+        <li>Leading "Pearl" project: carving out GN Hearing from GN Audio infra ahead of the Amplifon transition</li>
+        <li>Diagnosing and resolving complex GPO / Kerberos / ODBC failures on WS2025 SCOM deployments</li>
+        <li>Architecting file server migration with NAT-based transparent SMB redirection (VNHAN site)</li>
+        <li>Resolving SFTP service outages (WS_FTP / PostgreSQL ODBC driver incompatibility) on critical transfer servers</li>
+        <li>SCCM client enrollment troubleshooting across isolated manufacturing domain environments</li>
       </ul>
     </div>
 
@@ -981,7 +935,7 @@
       <ul class="tl-bullets">
         <li>Technical lead for cross-regional infrastructure projects across 7 European countries and HQ in Shenzhen</li>
         <li>Coordinated infrastructure roadmap across all EU sites and liaised directly with global IT leadership</li>
-        <li>Received Employee of the Year 2024 award</li>
+        <li>Received Employee of the Year 2024 award; invited to Mindray HQ in Shenzhen, China</li>
       </ul>
     </div>
 
@@ -1044,103 +998,53 @@
 <section id="projects">
   <div class="section-label fade-in">portfolio</div>
   <h2 class="section-title fade-in">Projects & Case Studies</h2>
-
   <div class="projects-grid">
     <div class="project-card fade-in">
-      <div class="proj-header">
-        <div class="proj-icon">🔀</div>
-        <span class="proj-status status-active">Active</span>
-      </div>
+      <div class="proj-header"><div class="proj-icon">🔀</div><span class="proj-status status-active">Active</span></div>
       <div class="proj-name">Project Pearl — GN Hearing Separation</div>
       <div class="proj-desc">Full infrastructure carve-out of GN Hearing from the ONEgn unified GN Audio domain. Covers network trust dissolution, compute separation, VMware segmentation, backup reassignment, and monitoring platform split ahead of the Amplifon transition.</div>
       <div class="proj-tags">
-        <span class="proj-tag">Active Directory</span>
-        <span class="proj-tag">VMware</span>
-        <span class="proj-tag">Azure</span>
-        <span class="proj-tag">Veeam</span>
-        <span class="proj-tag">SCOM</span>
-        <span class="proj-tag">WSUS</span>
+        <span class="proj-tag">Active Directory</span><span class="proj-tag">VMware</span><span class="proj-tag">Azure</span><span class="proj-tag">Veeam</span><span class="proj-tag">SCOM</span><span class="proj-tag">WSUS</span>
       </div>
     </div>
-
     <div class="project-card fade-in">
-      <div class="proj-header">
-        <div class="proj-icon">🗂️</div>
-        <span class="proj-status status-ongoing">Ongoing</span>
-      </div>
+      <div class="proj-header"><div class="proj-icon">🗂️</div><span class="proj-status status-ongoing">Ongoing</span></div>
       <div class="proj-name">File Server Migration — NAT/SMB Redirection</div>
       <div class="proj-desc">Designed a transparent file server migration blueprint for the VNHAN site using NAT-based SMB redirection, allowing seamless cutover with no client-side reconfiguration. Eliminates disruption during storage platform transition.</div>
       <div class="proj-tags">
-        <span class="proj-tag">SMB</span>
-        <span class="proj-tag">NAT</span>
-        <span class="proj-tag">Windows Server</span>
-        <span class="proj-tag">DFS</span>
-        <span class="proj-tag">Network</span>
+        <span class="proj-tag">SMB</span><span class="proj-tag">NAT</span><span class="proj-tag">Windows Server</span><span class="proj-tag">DFS</span><span class="proj-tag">Network</span>
       </div>
     </div>
-
     <div class="project-card fade-in">
-      <div class="proj-header">
-        <div class="proj-icon">📡</div>
-        <span class="proj-status status-complete">Resolved</span>
-      </div>
+      <div class="proj-header"><div class="proj-icon">📡</div><span class="proj-status status-complete">Resolved</span></div>
       <div class="proj-name">SFTP Outage — WS_FTP / PostgreSQL ODBC RCA</div>
       <div class="proj-desc">Root-caused a critical SFTP outage on sftp.emea.gn.com to an access violation in psqlodbc35w.dll crashing sshserver.exe, triggered by abrupt TCP disconnections from Azure-hosted IPs. Implemented service auto-recovery and long-term architectural fix.</div>
       <div class="proj-tags">
-        <span class="proj-tag">WS_FTP</span>
-        <span class="proj-tag">SFTP</span>
-        <span class="proj-tag">ODBC</span>
-        <span class="proj-tag">Azure</span>
-        <span class="proj-tag">TCP/IP</span>
-        <span class="proj-tag">RCA</span>
+        <span class="proj-tag">WS_FTP</span><span class="proj-tag">SFTP</span><span class="proj-tag">ODBC</span><span class="proj-tag">Azure</span><span class="proj-tag">TCP/IP</span><span class="proj-tag">RCA</span>
       </div>
     </div>
-
     <div class="project-card fade-in">
-      <div class="proj-header">
-        <div class="proj-icon">🛡️</div>
-        <span class="proj-status status-complete">Complete</span>
-      </div>
+      <div class="proj-header"><div class="proj-icon">🛡️</div><span class="proj-status status-complete">Complete</span></div>
       <div class="proj-name">ISO 27001 Compliance — Mindray EU</div>
       <div class="proj-desc">Led end-to-end ISO 27001 implementation across all Mindray European offices. Covered asset classification, access control policies, risk assessments, incident management procedures, and infrastructure hardening aligned to Annex A controls.</div>
       <div class="proj-tags">
-        <span class="proj-tag">ISO 27001</span>
-        <span class="proj-tag">Risk Management</span>
-        <span class="proj-tag">RBAC</span>
-        <span class="proj-tag">Policy</span>
-        <span class="proj-tag">Compliance</span>
+        <span class="proj-tag">ISO 27001</span><span class="proj-tag">Risk Management</span><span class="proj-tag">RBAC</span><span class="proj-tag">Policy</span><span class="proj-tag">Compliance</span>
       </div>
     </div>
-
     <div class="project-card fade-in">
-      <div class="proj-header">
-        <div class="proj-icon">📞</div>
-        <span class="proj-status status-complete">Complete</span>
-      </div>
+      <div class="proj-header"><div class="proj-icon">📞</div><span class="proj-status status-complete">Complete</span></div>
       <div class="proj-name">Cisco CUCM & WLC Centralized Deployment</div>
       <div class="proj-desc">Designed and deployed a centralized Cisco Unified Communications Manager telephony infrastructure and Wireless LAN Controller across multiple European office sites, replacing fragmented legacy PBX systems with a unified IP telephony platform.</div>
       <div class="proj-tags">
-        <span class="proj-tag">Cisco CUCM</span>
-        <span class="proj-tag">WLC</span>
-        <span class="proj-tag">VoIP</span>
-        <span class="proj-tag">Networking</span>
-        <span class="proj-tag">Multi-site</span>
+        <span class="proj-tag">Cisco CUCM</span><span class="proj-tag">WLC</span><span class="proj-tag">VoIP</span><span class="proj-tag">Networking</span><span class="proj-tag">Multi-site</span>
       </div>
     </div>
-
     <div class="project-card fade-in">
-      <div class="proj-header">
-        <div class="proj-icon">💾</div>
-        <span class="proj-status status-complete">Complete</span>
-      </div>
+      <div class="proj-header"><div class="proj-icon">💾</div><span class="proj-status status-complete">Complete</span></div>
       <div class="proj-name">Veeam B&R Enterprise Implementation</div>
       <div class="proj-desc">Implemented Veeam Backup & Replication across Mindray European datacenters. Defined backup policies, RTO/RPO targets, offsite replication to secondary sites, and built recovery runbooks validated through quarterly DR testing.</div>
       <div class="proj-tags">
-        <span class="proj-tag">Veeam</span>
-        <span class="proj-tag">Backup</span>
-        <span class="proj-tag">DR</span>
-        <span class="proj-tag">VMware</span>
-        <span class="proj-tag">RTO/RPO</span>
+        <span class="proj-tag">Veeam</span><span class="proj-tag">Backup</span><span class="proj-tag">DR</span><span class="proj-tag">VMware</span><span class="proj-tag">RTO/RPO</span>
       </div>
     </div>
   </div>
@@ -1152,7 +1056,6 @@
 <section id="certifications">
   <div class="section-label fade-in">credentials</div>
   <h2 class="section-title fade-in">Certifications</h2>
-
   <div class="certs-grid">
     <div class="cert-card fade-in">
       <div class="cert-badge">🪟</div>
@@ -1172,18 +1075,20 @@
       <div class="cert-issuer">Microsoft</div>
       <div class="cert-year">Windows Server</div>
     </div>
-    <div class="cert-card fade-in" style="border-color: rgba(0,120,255,0.3);">
-      <a href="https://www.credly.com/users/amenmekonnen-bekele" target="_blank" rel="noopener" style="text-decoration:none; display:contents;">
-        <img src="https://images.credly.com/size/340x340/images/683783d8-eaac-4c37-a14d-11bd8a36321d/ccna_600.png"
-          alt="Cisco CCNA Badge"
-          style="width:64px; height:64px; object-fit:contain; margin-bottom:0.3rem; border-radius:4px;"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-        <div style="display:none; font-size:1.4rem; margin-bottom:0.3rem;">🌐</div>
-        <div class="cert-name" style="color:var(--accent2)">Cisco CCNA 200-301</div>
-        <div class="cert-issuer">Cisco · ID: CSCO14808580 · Verified ↗</div>
-        <div class="cert-year">Jan 2025 · Networking</div>
-      </a>
+
+    <!-- CCNA — Credly verified embed -->
+    <div class="credly-card fade-in">
+      <div
+        data-iframe-width="150"
+        data-iframe-height="270"
+        data-share-badge-id="aa42f63a-4e01-45d2-8ac1-9c88301b0091"
+        data-share-badge-host="https://www.credly.com">
+      </div>
+      <div class="cert-name">Cisco CCNA 200-301</div>
+      <div class="cert-issuer">Cisco · ID: CSCO14808580</div>
+      <div class="cert-year">Jan 2025 · Networking</div>
     </div>
+
     <div class="cert-card fade-in">
       <div class="cert-badge">⚙️</div>
       <div class="cert-name">VMware VCP-DCV</div>
@@ -1199,33 +1104,24 @@
 <section id="contact">
   <div class="section-label fade-in">reach out</div>
   <h2 class="section-title fade-in">Get In Touch</h2>
-
   <div class="contact-grid">
     <div class="contact-info fade-in">
-      <p>
-        Whether it's a challenging infrastructure project, a senior ops role,
-        or a complex separation/migration initiative — let's talk.
-      </p>
+      <p>Whether it's a challenging infrastructure project, a senior ops role, or a complex separation/migration initiative — let's talk.</p>
       <div class="contact-links">
         <a href="mailto:nunugez@gmail.com" class="contact-link">
-          <div class="cl-icon">✉️</div>
-          nunugez@gmail.com
+          <div class="cl-icon">✉️</div>nunugez@gmail.com
         </a>
         <a href="https://www.linkedin.com/in/amen-bekele/" target="_blank" rel="noopener" class="contact-link">
-          <div class="cl-icon">🔗</div>
-          linkedin.com/in/amen-bekele
+          <div class="cl-icon">🔗</div>linkedin.com/in/amen-bekele
         </a>
         <a href="https://github.com/amenbekele1" target="_blank" rel="noopener" class="contact-link">
-          <div class="cl-icon">🐙</div>
-          github.com/amenbekele1
+          <div class="cl-icon">🐙</div>github.com/amenbekele1
         </a>
         <a href="https://www.credly.com/users/amenmekonnen-bekele" target="_blank" rel="noopener" class="contact-link">
-          <div class="cl-icon">🏅</div>
-          credly.com/amenmekonnen-bekele
+          <div class="cl-icon">🏅</div>credly.com/amenmekonnen-bekele
         </a>
         <span class="contact-link" style="cursor:default;">
-          <div class="cl-icon">📍</div>
-          Warsaw, Poland
+          <div class="cl-icon">📍</div>Warsaw, Poland
         </span>
       </div>
     </div>
@@ -1257,14 +1153,12 @@
 </footer>
 
 <script>
-  // ── THEME TOGGLE ──
   const html = document.documentElement;
   const themeBtn = document.getElementById('themeToggle');
   themeBtn.addEventListener('click', () => {
     html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
   });
 
-  // ── TYPING EFFECT ──
   const phrases = [
     'Senior Infrastructure & Operations Engineer',
     'Enterprise Systems Architect',
@@ -1280,43 +1174,26 @@
     if (!deleting) {
       typedEl.textContent = phrase.substring(0, ci + 1);
       ci++;
-      if (ci === phrase.length) {
-        deleting = true;
-        setTimeout(type, 1800);
-        return;
-      }
+      if (ci === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
     } else {
       typedEl.textContent = phrase.substring(0, ci - 1);
       ci--;
-      if (ci === 0) {
-        deleting = false;
-        pi = (pi + 1) % phrases.length;
-      }
+      if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
     }
     setTimeout(type, deleting ? 45 : 65);
   }
   type();
 
-  // ── SCROLL FADE-IN ──
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 
   document.querySelectorAll('.fade-in').forEach((el, i) => {
     el.style.transitionDelay = (i % 4) * 0.08 + 's';
     observer.observe(el);
   });
+  setTimeout(() => { document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible')); }, 1500);
 
-  setTimeout(() => {
-    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
-  }, 1500);
-
-  // ── CONTACT FORM (Formspree) ──
   async function handleSubmit() {
     const submitBtn = document.getElementById('formSubmit');
     const statusEl = document.getElementById('formStatus');
@@ -1324,7 +1201,6 @@
     const email = document.getElementById('cf-email').value.trim();
     const message = document.getElementById('cf-msg').value.trim();
 
-    // Basic validation
     if (!name || !email || !message) {
       statusEl.textContent = '⚠ Please fill in all fields before sending.';
       statusEl.className = 'form-status show fail';
@@ -1346,11 +1222,10 @@
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ name, email, message })
       });
-
       if (res.ok) {
         submitBtn.textContent = '✓ Message Sent!';
         submitBtn.classList.add('sent');
-        statusEl.textContent = '✓ Thanks for reaching out — I\'ll get back to you soon.';
+        statusEl.textContent = "✓ Thanks for reaching out — I'll get back to you soon.";
         statusEl.className = 'form-status show success';
         document.getElementById('cf-name').value = '';
         document.getElementById('cf-email').value = '';
@@ -1361,9 +1236,7 @@
           submitBtn.disabled = false;
           statusEl.className = 'form-status';
         }, 5000);
-      } else {
-        throw new Error('Server error');
-      }
+      } else { throw new Error('Server error'); }
     } catch (err) {
       submitBtn.textContent = 'Send Message →';
       submitBtn.classList.add('error');
